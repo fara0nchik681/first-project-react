@@ -4,19 +4,18 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './Header'
 import Welcome from './welcome'
- 
-
+ import MyComponent from './components/myComponent'
+import ProductCard from './components/ProductCard'
+import ProductList from './components/ProductList'
+import Main from './pages/Main'
+import Education from './pages/Education'
 
 function App() {
   
 
   return (
-    <div class="flex flex-col gap-40">
-    <Header/>
-    <Welcome/>
 
-    </div>
-   
+      <Main/>
    
 
   )
