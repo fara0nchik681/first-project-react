@@ -19,7 +19,7 @@ function ProductList(){
     title={"телефон"}
     price={"Цена:9407р"}
     description={"апле"}
-    img={""}
+    img={"/orig.jpg"}
     
     
     
@@ -29,7 +29,7 @@ function ProductList(){
     title={"тв"}
     price={"Цена:24007р"}
     description={"нормальный"}
-    img={"s"}
+    img={"/slide-2-m.jpg"}
     
     
     

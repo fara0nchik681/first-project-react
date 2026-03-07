@@ -1,4 +1,8 @@
-function ProductCard({title,price,description,img}){
+import { useState } from "react"
+import CardCounter from "./CardCounter"
+
+
+function ProductCard({count,setCount,title,price,description,img}){
     return(
         <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
         <img src={img}></img>
@@ -16,12 +20,26 @@ function ProductCard({title,price,description,img}){
 
 
 
-
+<CardCounter/>
 
         <button className="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-black bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 transition-colors cursor-pointer">
           Купить
         </button>
       </div>
+      
+
+
+
     )
 }
+
+
+
+
+
+
+
+
+  
+
 export default ProductCard

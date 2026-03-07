@@ -1,6 +1,11 @@
 import MyComponent from "../components/myComponent"
 import ProductCard from "../components/ProductCard"
 import SampleBlock from "../components/SampleBlock"
+import ComponentUseState from "../components/ComponentUseState"
+import SampleBlockUseState from "../components/SampleBlockUseState"
+import Counter from "../components/Counter"
+
+
 
 
 function Education(){
@@ -13,6 +18,9 @@ function Education(){
         title={"заголовок"}
         description={"описание"}
         />
+        <ComponentUseState/>
+        <SampleBlockUseState/>
+        <Counter/>
         
         </div>
     )
