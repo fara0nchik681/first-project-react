@@ -1,10 +1,14 @@
 import { useState } from "react"
 import CardCounter from "./CardCounter"
+import FavoriteConditional from "./FavoriteConditional"
 
 
-function ProductCard({count,setCount,title,price,description,img}){
+function ProductCard({count,setCount,title,price,description,img,isFav,setIsFav}){
     return(
         <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<FavoriteConditional
+isFav={isFav} setIsFav={setIsFav}
+/>
         <img src={img}></img>
         <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{title}</h3>
         <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-xl bg-blue-100 text-blue-600">

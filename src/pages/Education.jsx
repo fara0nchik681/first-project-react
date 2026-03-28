@@ -5,10 +5,14 @@ import ComponentUseState from "../components/ComponentUseState"
 import SampleBlockUseState from "../components/SampleBlockUseState"
 import Counter from "../components/Counter"
 import MyList from "../components/MyList"
-
+import FirstConditional from "../components/EduComponents/FirstConditional"
+import { useState } from "react"
 
 
 function Education(){
+const [number,setNumber] = useState(0)
+const [isLogin,setIsLogin] = useState(false)
+
     return(
         <div className="flex flex-col gap-10">
 
@@ -22,6 +26,8 @@ function Education(){
         <SampleBlockUseState/>
         <Counter/>
         <MyList/>
+        <FirstConditional isLogin={isLogin} setIsLogin={setIsLogin}/>
+        <button onClick={()=>setIsVisible(!isVisible) }>показать/скрыть</button>
         
         </div>
     )
