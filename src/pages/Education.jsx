@@ -7,9 +7,13 @@ import Counter from "../components/Counter"
 import MyList from "../components/MyList"
 import FirstConditional from "../components/EduComponents/FirstConditional"
 import { useState } from "react"
+import OnChangeComp from "../components/OnChangeComp"
+import { useEffect } from "react"
 
 
 function Education(){
+useEffect(()=>{},[])
+
 const [number,setNumber] = useState(0)
 const [isLogin,setIsLogin] = useState(false)
 
@@ -28,6 +32,7 @@ const [isLogin,setIsLogin] = useState(false)
         <MyList/>
         <FirstConditional isLogin={isLogin} setIsLogin={setIsLogin}/>
         <button onClick={()=>setIsVisible(!isVisible) }>показать/скрыть</button>
+        <OnChangeComp/>
         
         </div>
     )
