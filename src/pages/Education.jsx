@@ -11,6 +11,7 @@ import OnChangeComp from "../components/OnChangeComp"
 import { useEffect } from "react"
 
 
+
 function Education(){
 useEffect(()=>{},[])
 
@@ -33,6 +34,8 @@ const [isLogin,setIsLogin] = useState(false)
         <FirstConditional isLogin={isLogin} setIsLogin={setIsLogin}/>
         <button onClick={()=>setIsVisible(!isVisible) }>показать/скрыть</button>
         <OnChangeComp/>
+       
+
         
         </div>
     )

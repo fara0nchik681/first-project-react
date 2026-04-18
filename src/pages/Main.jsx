@@ -4,6 +4,7 @@ import Header from "../Header"
 
 
 
+
 function Main(){
     return(
         <>
@@ -11,6 +12,7 @@ function Main(){
         <h2>главная страница</h2>
         
         <ProductList/>
+       
         
         
         
