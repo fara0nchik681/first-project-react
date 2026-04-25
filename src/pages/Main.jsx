@@ -1,6 +1,7 @@
 import ProductCard from "../components/ProductCard"
 import ProductList from "../components/ProductList"
 import Header from "../Header"
+import Products from "../components/products"
 
 
 

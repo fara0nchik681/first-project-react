@@ -9,6 +9,7 @@ import FirstConditional from "../components/EduComponents/FirstConditional"
 import { useState } from "react"
 import OnChangeComp from "../components/OnChangeComp"
 import { useEffect } from "react"
+import Users from "../components/Users"
 
 
 
@@ -22,6 +23,7 @@ const [isLogin,setIsLogin] = useState(false)
         <div className="flex flex-col gap-10">
 
         <h1>обучающая страница</h1>
+        <Users/>
         <MyComponent/>
         <SampleBlock 
         title={"заголовок"}
