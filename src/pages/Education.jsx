@@ -23,7 +23,7 @@ const [isLogin,setIsLogin] = useState(false)
         <div className="flex flex-col gap-10">
 
         <h1>обучающая страница</h1>
-        <Users/>
+        {/* <Users/> */}
         <MyComponent/>
         <SampleBlock 
         title={"заголовок"}

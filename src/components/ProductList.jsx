@@ -22,7 +22,8 @@ function ProductList() {
   useEffect(() => {
     const filtered = products.filter((item) => {
       const price = parseFloat(item.price);
-      return price >= (minPrice || 0) && price <= (maxPrice || Infinity);
+      return price >= (minPrice || 
+        0) && price <= (maxPrice || Infinity);
     });
     setFilteredItems(filtered);
   }, [minPrice, maxPrice, products]);

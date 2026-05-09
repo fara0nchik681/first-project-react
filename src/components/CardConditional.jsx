@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 function CardConditional (){
     const [isLogin,setIsLogin] = useState(false)
@@ -14,11 +15,12 @@ const message = age >=18
 
 return(
 <div>
-{isLogin == true
+    <Link to ={"/login"}>{isLogin == true
 ?<button onClick={()=>setIsLogin(false)}>войти</button>
 :<button onClick={()=>setIsLogin(true)}>выйти</button>
 
-}
+}</Link>
+
 
 
 </div>

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import CardCounter from "./CardCounter";
 import FavoriteConditional from "./FavoriteConditional";
+import { Link } from "react-router-dom";
 
 function ProductCard({ id, title, price, description, img, onBuy, onRemove }) {
   const [isFav, setIsFav] = useState(false);
@@ -16,7 +17,7 @@ function ProductCard({ id, title, price, description, img, onBuy, onRemove }) {
         <img src={img} alt={title} className="max-h-full object-contain" />
       </div>
 
-      <h3 className="mb-2 text-xl font-bold text-gray-900">{title}</h3>
+     <Link to ={"/product/"+id}><h3 className="mb-2 text-xl font-bold text-gray-900">{title}</h3></Link>
       <p className="mb-4 text-sm text-gray-600 flex-grow leading-relaxed line-clamp-3">
         {description}
       </p>
