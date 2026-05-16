@@ -18,13 +18,16 @@ function Header({ isLogin, setIsLogin }) {
     };
   
     return (
+ 
       <header style={headerStyles}>
         <div>интернет магазин</div>
         <div style={buttonStyle}>
           <CardConditional isLogin={isLogin} setIsLogin={setIsLogin} />
         </div>
       </header>
+            
     );
   }
+ 
   
   export default Header;

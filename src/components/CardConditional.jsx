@@ -16,10 +16,14 @@ const message = age >=18
 return(
 <div>
     <Link to ={"/login"}>{isLogin == true
-?<button onClick={()=>setIsLogin(false)}>войти</button>
-:<button onClick={()=>setIsLogin(true)}>выйти</button>
+?<button onClick={()=>setIsLogin(false)}>выйти</button>
+:<button onClick={()=>setIsLogin(true)}>войти</button>
 
 }</Link>
+<Link to={"/add"}><button>
+админка
+
+  </button></Link> 
 
 
 

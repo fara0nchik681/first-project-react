@@ -12,6 +12,7 @@ import Education from './pages/Education'
 import { Routes,Route } from 'react-router-dom'
 import Auth from './pages/Auth'
 import ProductPage from './pages/ProductPage'
+import AddProductPage from './pages/AddProductPage'
 
 
 
@@ -25,6 +26,7 @@ function App() {
 <Route path="/edu" element={<Education/>}/>
 <Route path="/login" element={<Auth/>}/>
 <Route path ="/product/:id" element={<ProductPage/>}/>
+<Route path="/add" element={<AddProductPage/>}/>
     </Routes>
 
       
